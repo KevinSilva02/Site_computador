@@ -28,7 +28,7 @@ class Computador{
             $preview->execute();
         }
       
-        public static function ListarTodos(){
+       public static function ListarTodos(){
         $conexao = new Conexao();
         $sql = "SELECT * FROM Computador";
         $dados = $conexao->Consultar($sql);
@@ -36,5 +36,5 @@ class Computador{
             $dados[$i]['dataAtualizacao'] = date('d/m/Y', $linha['dataAtualizacao']);
         }
         return $dados;
-    }    
+    }
 }

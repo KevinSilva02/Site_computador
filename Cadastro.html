@@ -5,30 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
     <script src="CadastroComputador.js"></script>
 </head>
 <body>
     <form>
         <div>
-            <label for="txtProcessador">Processador</label>
-            <input type="text" placeholder="Processador" id="txtProcessador" name="txtProcessador" required />
+            <label for="txtProcessador">Processador</label></br>
+            <input type="text" placeholder="Processador" required
+            id="txtProcessador" name="txtProcessador" />
         </div>
         <div>
-            <label for="txtUSB">USB</label>
-            <input type="number" placeholder="USB" id="txtUSB" name="txtUSB" required />
+            <label for="txtUSB">USB</label></br>
+            <input type="number" placeholder="USB" required
+            id="txtUSB" name="txtUSB" size="3" />
         </div>
         <div>
-            <input type="checkbox" value="1" id="chkAtualizado" name="chkAtualizado" />
+            <input type="checkbox" value="1"
+            id="chkAtualizado" name="chkAtualizado" />
             <label for="chkAtualizado">Atualizado</label>
         </div>
         <div>
-            <label for="txtDataAtualizacao  ">Data de Atualização</label>
-            <input type="datetime" placeholder="Data de Atualizacao" id="txtDataAtualizacao" name="txtDataAtualizacao" />
+            <label for="txtDataAtualizacao">Data de Atualização</label></br>
+            <input type="datetime" placeholder="Data de Atualização"
+            id="txtDataAtualizacao" name="txtDataAtualizacao"  />
         </div>
         <div>
-            <input type="submit" value="Cadastrar" />
+            <input type="submit" value="Cadastrar" class="botao" />
         </div>
     </form>
 </body>
 </html>
-
