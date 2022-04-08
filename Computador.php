@@ -33,7 +33,7 @@ class Computador{
         $sql = "SELECT * FROM Computador";
         $dados = $conexao->Consultar($sql);
         foreach ($dados as $i => $linha) {
-            $dados[$i]['dataAtualizacao'] = date('d/m/Y', $linha['dataAtualizacao']);
+            $dados[$i]['$dataAtualizacao'] = date('d/m/Y', $linha['dataAtualizacao']);
         }
         return $dados;
     }

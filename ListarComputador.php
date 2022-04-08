@@ -1,7 +1,7 @@
 <?php
-include "Produto.php";
+include "Computador.php";
 
-$dados = Produto::ListarTodos();
+$dados = Computador::ListarTodos();
 $json = json_encode($dados);
 header("Content-Type: application/json; charset=UTF-8 ");
 echo $dados;
